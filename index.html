@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="TBD">
+  <meta name="keywords" content="In-Hand Manipulation, Reinforcement Learning, Force and Tactile Sensing">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vision-Free Pose Estimation for In-Hand Manipulation via Multi-Modal Haptic Attention</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- Title -->
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <!-- <h1 class="title is-1 publication-title">Effectiveness of Kinesthetic Sensing in In-Hand Rotation of Objects with an Eccentric Center of Mass</h1> -->
+          
+          <h1 class="title is-1 publication-title"><span style="color: #b8d622;">Vision-Free Pose Estimation</span> <br>
+            for In-Hand Manipulation  <br>
+            via <span style="color: #b8d622;">Multi-Modal Haptic Attention </span> 
+          </h1>
+          
+          <!-- <h1 class="title is-4 publication-title">
+              CoRL 2025 Workshop
+              <br> 
+              <span style="font-size: 0.8em;"> 
+                Workshop Name
+              </span>
+          </h1> -->
+          
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              Anonymous Author(s)</span>
+          </div>
+
+          <!-- <div class="is-size-5 publication-authors"> -->
+            <!-- <span class="author-block"><sup>1</sup>Aff</span> -->
+          <!-- </div> -->
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. -->
+              <!-- <span class="link-block">
+                <a href="https://openreview.net/"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span> -->
+
+              <!-- Poster Link. -->
+              <!-- <span class="link-block">
+                <a href="./static/videos/poster.pdf"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Poster</span>
+                </a>
+              </span> -->
+
+              <!-- Video Link. -->
+              <!-- <span class="link-block">
+                <a href="YOUTUBE_LINK"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-youtube"></i>
+                  </span>
+                  <span>Video</span>
+                </a>
+              </span> -->
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+
+      <!-- <div class="publication-video">
+        <iframe src="YOUTUBE_LINK"
+                frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+      </div> -->
+      <img src="./static/images/f1.png"
+        alt="f1"
+        style="height: 250px; object-fit: contain;"
+      />
+
+      <h2 class="title is-3" style="margin-top: 2rem;">TL;DR:</h2h2>
+      <h2 class="subtitle has-text-centered">
+        <p>
+          We propose a vision-free approach that integrates multiple haptic sensing modalities 
+          <br> among kinesthetic, contact, and proprioceptive signals, as well as their temporal dynamics.
+        </p>
+      </h2>
+    </div>
+  </div>
+</section>
+
+<!-- Abstract -->
+<!-- <section class="hero teaser"> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+
+
+        <h2 class="title is-3 teaser">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+          Humans are capable of in-hand manipulation without visual feedback, by inferring its pose through haptic feedback. 
+          However, <span style="font-weight: bolder; background: #f5f5f5;">in-hand manipulation with multi-fingered robotic hands remains highly challenging 
+            due to severe self-occlusion and limited visual accessibility. </span>
+          </p>
+          <p>
+          To address this problem, we propose a vision-free approach that integrates multiple haptic sensing modalities. 
+          Specifically, we develop a haptic attention-based pose estimator that captures correlations among kinesthetic, contact, and proprioceptive signals, 
+          as well as their temporal dynamics.          
+          </p>
+          <p>
+            Experimental results demonstrate that haptic feedback alone enables reliable pose estimation and that contact-rich sensing substantially improves 
+            reorientation performance. <span style="font-weight: bolder; background: #f5f5f5;">Our pose estimator achieves average errors of only 4.94 mm in position 
+            and 11.6 degrees in orientation during 300 iterations (10 seconds)</span>, underscoring the effectiveness of haptic-driven pose estimation for dexterous manipulation.
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
+<!-- Research Aim -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-3">Vision-Free Object Pose Estimator </h2>
+      <h2 class="subtitle has-text-centered">
+        <p>
+           We propose an LSTM attention-based estimator <br>
+           that integrates kinesthetic, cutaneous, and proprioceptive signals, <br>
+           enabling vision-free object pose estimation.
+        </p>
+        <br>
+
+      <img src="./static/images/f2-3.png"
+        alt="f2"
+        style="height: 250px; object-fit: contain;"
+      />
+
+
+        <br><br>
+
+        <p>
+          Our BiLSTM-based haptic pose estimator. <br> (A) Data collection: joint angles, 
+          forces/torques at finger bases, and binary fingertip contacts. <br>
+          (B) Multimodal haptic histories and the previous estimate are used to predict the current object pose.
+        </p>
+
+        <br>
+        <img src="./static/images/f3-1.png"
+          alt="f2"
+          style="height: 250px; object-fit: contain;"
+        />
+      </h2>
+      
+    </div>
+  </div>
+</section>
+
+<!-- Experimental Setup / MDP -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-3">Experimental Setup</h2>
+      <h2 class="subtitle has-text-centered">
+        <p>
+        <div class="content has-text-justified">
+          <br>
+            <span style="font-weight: bolder">Simulation:</span> Isaac Sim with 8196 parallel environments 
+            <br> <span style="font-weight: bolder">Training:</span> PPO, 100K steps, and three random seeds 
+            <br> <span style="font-weight: bolder">Evaluation:</span> 500 rollouts per instance 
+            <br> <span style="font-weight: bolder">H/W:</span> Single RTX 4090 GPU
+            <br> <span style="font-weight: bolder">Observation Modality:</span> 
+            <br> 1. Groun Truth (GT)
+            <br> 2. Random Noise as object pose
+            <br> 3. Pose Estimator (PE) with haptic feedback
+            </p>
+          </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Experiment Graph -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-3">
+        Experiments
+      </h2>
+      <h2 class="subtitle has-text-centered">
+        <br>
+
+      <div class="mdp" style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2rem;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      padding: 1rem 0;
+      ">
+
+      <video id="ex1-video" autoplay muted playsinline loop style="border-radius: 12px; height: 400px">
+        <source src="./static/videos/est_fail.mp4"
+                type="video/mp4">
+      </video>
+      <video id="ex1-video" autoplay muted playsinline loop style="border-radius: 12px; height: 400px">
+        <source src="./static/videos/just_estimate.mp4"
+                type="video/mp4">
+      </video>
+      </div>
+
+        <br>
+        <h2 class="title is-4">Performance on In-Hand Reorientation (Simulation)</h2>
+        <p>
+          We compare two conditions: (1) a ground-truth oracle baseline using privileged object pose, and (2) our proposed haptic-only estimator. Each condition is tested with three random seeds. As summarized in Table~\ref{tab:evaluation}, the oracle baseline achieves an average stability of 88.7 seconds and 77.3 successful reorientations, while our estimator maintains stability for 27.1 seconds with 3.3 successful reorientations.
+
+          These results demonstrate the feasibility of vision-free haptic-based pose estimation, while also highlighting the performance gap relative to ground-truth sensing. Importantly, they underline the critical role of accurate real-time pose estimation: stable grasping can be achieved without precise feedback, but successful reorientation requires fine-grained and continuous pose tracking.
+        </p>
+        <br>
+
+        <div class="mdp" style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        padding: 1rem 0;
+        ">
+
+        <video id="ex1-video" autoplay muted playsinline loop style="border-radius: 12px; height: 400px">
+          <source src="./static/videos/real.mp4"
+                  type="video/mp4">
+        </video>
+            <img src="./static/videos/real_2.gif"
+            alt="dataset"
+            style="height: 400px; object-fit: contain;"
+            />
+        </div>
+
+        <br>
+        <h2 class="title is-4">Performance on In-Hand Rotation (Real-World)</h2>
+        <p>
+        we evaluate the feasibility of our method on a physical platform. <br>
+        Using a canned tomato object with an AprilTag attached to its bottom surface, <br>
+        we collect 20K haptic samples and ground-truth poses while executing an in-hand rotation policy. <br>
+        Haptic feedback is recorded directly from the robotic hand platform.   <br>       
+        </p>
+           <br>       
+        <p>
+          We then train the model solely on this real-world dataset, which is nearly 200 times smaller than the simulated dataset.    <br>       
+          Over 10 seconds (100 steps) of continuous inference,
+             <br> the estimator achieves an average error of 38.2 mm in position and 3.67 degrees in orientation.  <br>  
+          the results emphasize the need for larger and more diverse real-world datasets 
+          to close the sim-to-real gap.
+        </p>
+        <br>
+
+    </div>
+  </div>
+</section>
+
+<!-- Results -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body has-text-centered">
+      <h2 class="title is-3">Results</h2>
+        <img src="./static/images/sim_result.png"
+        alt="f2"
+        style="height: 200px; object-fit: contain;"
+      />
+      <br>
+      <br>
+      <p>
+        These results demonstrate the feasibility of vision-free haptic-based pose estimation, <br>
+        while also highlighting the performance gap relative to ground-truth sensing. 
+      <br>
+        Importantly, they underline the critical role of accurate real-time pose estimation: <br>
+        stable grasping can be achieved without precise feedback, <br>
+        but successful reorientation requires fine-grained and continuous pose tracking.
+      </p>
+      <br>
+      <br>
+          <img src="./static/images/result.png"
+          alt="result"
+          style="height: 70%; object-fit: contain;"
+        />
+
+        <p>
+          From top to bottom, the plots show the ground-truth (GT) and predicted values for the x, y, and z positions, respectively. <br>
+          The bottom plot illustrates the orientation error. <br>
+          Predictions are generated in an autoregressive manner, <br> where each estimated pose is recursively fed back into the model 
+          as input for the next prediction.
+        </p>
+     </div>
+  </div>
+</section>
+
+
+<!-- BibTeX -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@inproceedings{
+      vision2025,
+      title={Vision-Free Pose Estimation for In-Hand Manipulation via Multi-Modal Haptic Attention},
+      author={Authors},
+      booktitle={CoRL Workshop},
+      year={2025},
+      }</code></pre>
+  </div>
+</section>
+
+<!-- Affiliations -->
+<!-- <section class="section">
+  <div class="container is-max-desktop has-text-centered">
+    <h2 class="title is-4">Affiliations</h2>
+    <div class="logos" style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding: 1rem 0;
+    ">
+    <a href="https://www.LINK.com" target="_blank">
+        <img src="static/images/LOGO.png" alt="Lab Logo" style="height: 60px; max-width: 150px; object-fit: contain;">
+    </a>
+    </div>
+  </div>
+</section> -->
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
